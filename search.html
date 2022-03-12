@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtuby | search</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/search.css">
+    <link type="text/css" rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body class="mt-5">
+    <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid">
+            <!-- ###################################### HEADER ######################################### -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+                <i class="fas fa-bars fa-2x" id="toggler"></i>
+                <b><a class="navbar-brand ml-3" href="index.html">Youtuby <span class="videoIcon p-1"><i
+                                class="fas fa-play-circle"></i></span></a></b>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-3 ml-1" href="index.html">Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 ml-1" href="#">Recently published</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-lg-3 px-3 ml-1" href="#">Trending</a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button onclick="location.href='search.html';" class="btn my-2 my-sm-0 btn-outline-info"
+                            type="submit">Search</button>
+                    </div>
+                </div>
+                <i class="fas fa-search mr-4 search-icon"></i>
+                <a class="nav-link logIn" href="#" data-toggle="modal" data-target="#loginmodel">Log in</a>
+            </nav>
+            <input type="search" class="form-control search-input" placeholder="Search...">
+            <!-- Modal -->
+            <div class="modal fade" id="loginmodel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">Password:</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#">Forgot password</a>
+                            <a href="#" class="mx-auto">Sign up</a>
+                            <button type="button" class="btn btn-primary">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div id="wrap">
+                    <div class="sidebar">
+                        <ul class="list-group list-group-flush">
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-home mr-2 bleu"></i>Home
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-algolia mr-2 bleu"></i>Suggestion
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-plus-square mr-2 bleu"></i>Recently published
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-fire-alt mr-2 bleu"></i>Trending
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-video mr-2 bleu"></i>My video
+                            </a>
+                            <a href="log.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-history mr-2 bleu"></i>Historical
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-share-square mr-2 bleu"></i>Subscribes
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog mr-2 bleu"></i>Parameters
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-question-circle mr-2 bleu"></i>Help
+                            </a>
+                            <a href="" class="list-group-item list-group-item-action">
+                                Front-end cours<br>
+                                &copy;Hsoub academy 2021
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="searchHeader">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-6">
+                    865 result
+                </div>
+                <div class="col-6">
+                    <span id="search-filters-icon" class="float-right"><i class="fas fa-filter"></i>Filter</span>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6 col-lg-3 filter-column">
+                    <div class="text-center">Date added</div>
+                    <hr>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName" id="">
+                        <span>Last hour</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName" id="">
+                        <span>Today</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName" id="">
+                        <span>This week</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName" id="">
+                        <span>This month</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName" id="">
+                        <span>This year</span>
+                    </label>
+                </div>
+                <div class="col-md-6 col-lg-3 filter-column">
+                    <div class="text-center">Type</div>
+                    <hr>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName2" id="">
+                        <span>Video</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName2" id="">
+                        <span>Channel</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName2" id="">
+                        <span>Playlist</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName2" id="">
+                        <span>Movie</span>
+                    </label>
+                </div>
+                <div class="col-md-6 col-lg-3 filter-column">
+                    <div class="text-center">Sort by</div>
+                    <hr>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName3" id="">
+                        <span>Relevance</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName3" id="">
+                        <span>Upload date</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName3" id="">
+                        <span>Number of views</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName3" id="">
+                        <span>Notice</span>
+                    </label>
+                </div>
+                <div class="col-md-6 col-lg-3 filter-column">
+                    <div class="text-center">Duration</div>
+                    <hr>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName4" id="">
+                        <span>Less than 4 minutes</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName4" id="">
+                        <span>Between 4 and 20 minutes</span>
+                    </label>
+                    <label class="d-block mb-3">
+                        <input type="checkbox" name="CheckBoxInputName4" id="">
+                        <span>More than 20 minutes</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 my-3">
+                <div class="card">
+                    <div class="card-horizontal d-md-flex d-block">
+                        <div class="cardIcons">
+                            <a href="watch.html">
+                                <img class="card-top-image" src="img/thumbnail/ruby.jpg" alt="Card image cap">
+                                <time>23:45</time>
+                                <i class="fas fa-play fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="card-body p-2">
+                            <a href="watch.html"><h4 class="card-title">Video title</h4></a>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos similique facere provident iste! Autem iure accusamus earum, atque in nesciunt vero saepe provident corporis recusandae!</p>
+                            <small class="text-muted">
+                                <i class="far fa-eye"></i><span>23 views</span>
+                                <i class="fas fa-clock"></i><span>2 minutes ago</span>
+                            </small>
+                            <a href="channel.html" class="channelImg">
+                                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle ml-3" width="30px">
+                                <span class="card-text ml-1">channel Name</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 my-3">
+                <div class="card">
+                    <div class="card-horizontal d-md-flex d-block">
+                        <div class="cardIcons">
+                            <a href="watch.html">
+                                <img class="card-top-image" src="img/thumbnail/php.jpg" alt="Card image cap">
+                                <time>8:12</time>
+                                <i class="fas fa-play fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="card-body p-2">
+                            <a href="watch.html">
+                                <h4 class="card-title">Video title</h4>
+                            </a>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos similique
+                                facere provident iste! Autem iure accusamus earum, atque in nesciunt vero saepe provident
+                                corporis recusandae!</p>
+                            <small class="text-muted">
+                                <i class="far fa-eye"></i><span>2.3k views</span>
+                                <i class="fas fa-clock"></i><span>3 days ago</span>
+                            </small>
+                            <a href="channel.html" class="channelImg">
+                                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle ml-3" width="30px">
+                                <span class="card-text ml-1">channel Name</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 my-3">
+                <div class="card">
+                    <div class="card-horizontal d-md-flex d-block">
+                        <div class="cardIcons">
+                            <a href="watch.html">
+                                <img class="card-top-image" src="img/thumbnail/frontend.jpg" alt="Card image cap">
+                                <time>14:35</time>
+                                <i class="fas fa-play fa-2x"></i>
+                            </a>
+                        </div>
+                        <div class="card-body p-2">
+                            <a href="watch.html">
+                                <h4 class="card-title">Video title</h4>
+                            </a>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos similique
+                                facere provident iste! Autem iure accusamus earum, atque in nesciunt vero saepe provident
+                                corporis recusandae!</p>
+                            <small class="text-muted">
+                                <i class="far fa-eye"></i><span>3.1k views</span>
+                                <i class="fas fa-clock"></i><span>1 weeks ago</span>
+                            </small>
+                            <a href="channel.html" class="channelImg">
+                                <img src="img/ch-logo.png" alt="channel image" class="rounded-circle ml-3" width="30px">
+                                <span class="card-text ml-1">channel Name</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

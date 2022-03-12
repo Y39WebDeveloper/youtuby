@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtuby | channel</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/channel.css">
+    <link type="text/css" rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body class="mt-5">
+    <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid">
+            <!-- ###################################### HEADER ######################################### -->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+                <i class="fas fa-bars fa-2x" id="toggler"></i>
+                <b><a class="navbar-brand ml-3" href="index.html">Youtuby <span class="videoIcon p-1"><i
+                                class="fas fa-play-circle"></i></span></a></b>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link px-3 ml-1" href="index.html">Suggestion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 ml-1" href="#">Recently published</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mr-lg-3 px-3 ml-1" href="#">Trending</a>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button onclick="location.href='search.html';" class="btn my-2 my-sm-0 btn-outline-info"
+                            type="submit">Search</button>
+                    </div>
+                </div>
+                <i class="fas fa-search mr-4 search-icon"></i>
+                <a class="nav-link logIn" href="#" data-toggle="modal" data-target="#loginmodel">Log in</a>
+            </nav>
+            <input type="search" class="form-control search-input" placeholder="Search...">
+            <!-- Modal -->
+            <div class="modal fade" id="loginmodel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">Email:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">Password:</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#">Forgot password</a>
+                            <a href="#" class="mx-auto">Sign up</a>
+                            <button type="button" class="btn btn-primary">Log in</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-4">
+                <div id="wrap">
+                    <div class="sidebar">
+                        <ul class="list-group list-group-flush">
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-home mr-2 bleu"></i>Home
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-algolia mr-2 bleu"></i>Suggestion
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-plus-square mr-2 bleu"></i>Recently published
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-fire-alt mr-2 bleu"></i>Trending
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-video mr-2 bleu"></i>My video
+                            </a>
+                            <a href="log.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-history mr-2 bleu"></i>Historical
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-share-square mr-2 bleu"></i>Subscribes
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-cog mr-2 bleu"></i>Parameters
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fas fa-question-circle mr-2 bleu"></i>Help
+                            </a>
+                            <a href="" class="list-group-item list-group-item-action">
+                                Front-end cours<br>
+                                &copy;Hsoub academy 2021
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="channelPage">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="banner position-relative">
+                    <img class="img-fluid" src="img/h-channel.jpg" alt="">
+                    <div class="social-media position-absolute bg-secondary p-1">
+                        <a href="#" title="channel name" class="mr-1">
+                            <img src="img/icons/hsoub.png" alt="">channelName
+                        </a>
+                        <a href="#" title="follow on twitter" class="mr-1">
+                            <img src="img/icons/twitter.png" alt="">
+                        </a>
+                        <a href="#" title="follow on facebook" class="mr-1">
+                            <img src="img/icons/facebook.png" alt="">
+                        </a>
+                        <a href="#" title="channel company" class="mr-1">
+                            <img src="img/icons/hsoub-web.png" alt="">
+                        </a>
+                    </div>
+                    <div class="subscribe position-absolute">
+                        <button class="btn btn-info">2461 subscribers</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light mx-auto w-100">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-lg-3" href="#">Playlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-lg-3" href="#">Channels</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-lg-3" href="#">Comunity</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mr-lg-3" href="#">About</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+            <div class="videoSection bg-white p-2 mt-3">
+                <div class="card border-0">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <video src="video/hsoub.mp4" class="w-100" controls poster="img/poster.png">
+                                no support your browser <code>video</code>
+                            </video>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card-block">
+                                <a href="watch.html">
+                                    <h4 class="card-title">Video title</h4>
+                                </a>
+                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos similique
+                                    facere provident iste! Autem iure accusamus earum, atque in nesciunt vero saepe provident
+                                    corporis recusandae!</p>
+                                <small class="text-muted">
+                                    <i class="far fa-eye"></i><span>3.1k views</span>
+                                    <i class="fas fa-clock"></i><span>1 weeks ago</span>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="letestDownload">
+                <div class="container">
+                    <h4 class="py-5">latest videos</h4>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <a href="watch.html">
+                                    <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="Card image">
+                                    <time>7:42</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">Video title</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="far fa-eye"></i><span class="ml-1">1.2k views</span></span>
+                                        <i class="fas fa-clock"></i><span class="ml-1">3 month ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channelImg">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30px">
+                                    <span class="card-text ml-1">channel Name</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <a href="watch.html">
+                                    <img src="img/thumbnail/php.jpg" class="card-img-top" alt="Card image">
+                                    <time>6:56</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">Video title</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="far fa-eye"></i><span class="ml-1">2k views</span></span>
+                                        <i class="fas fa-clock"></i><span class="ml-1">7 month ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channelImg">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30px">
+                                    <span class="card-text ml-1">channel Name</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <a href="watch.html">
+                                    <img src="img/thumbnail/mostaql2.png" class="card-img-top" alt="Card image">
+                                    <time>6:31</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">Video title</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="far fa-eye"></i><span class="ml-1">3.3k views</span></span>
+                                        <i class="fas fa-clock"></i><span class="ml-1">9 month ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channelImg">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30px">
+                                    <span class="card-text ml-1">channel Name</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <a href="watch.html">
+                                    <img src="img/thumbnail/mostaql1.jpg" class="card-img-top" alt="Card image">
+                                    <time>12:42</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">Video title</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="far fa-eye"></i><span class="ml-1">0 views</span></span>
+                                        <i class="fas fa-clock"></i><span class="ml-1">3 secondes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channelImg">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30px">
+                                    <span class="card-text ml-1">channel Name</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <a href="watch.html">
+                                    <img src="img/thumbnail/mostaql.png" class="card-img-top" alt="Card image">
+                                    <time>3:39</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">Video title</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="far fa-eye"></i><span class="ml-1">2 views</span></span>
+                                        <i class="fas fa-clock"></i><span class="ml-1">5 minutes ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channelImg">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30px">
+                                    <span class="card-text ml-1">channel Name</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <a href="watch.html">
+                                    <img src="img/thumbnail/khamsat4.png" class="card-img-top" alt="Card image">
+                                    <time>15:32s</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">Video title</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="far fa-eye"></i><span class="ml-1">3k views</span></span>
+                                        <i class="fas fa-clock"></i><span class="ml-1">9 months ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channelImg">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30px">
+                                    <span class="card-text ml-1">channel Name</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <a href="watch.html">
+                                    <img src="img/thumbnail/khamsat3.png" class="card-img-top" alt="Card image">
+                                    <time>10:01</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">Video title</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="far fa-eye"></i><span class="ml-1">13 views</span></span>
+                                        <i class="fas fa-clock"></i><span class="ml-1">5 hours ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channelImg">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30px">
+                                    <span class="card-text ml-1">channel Name</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card p-1 mb-4">
+                                <a href="watch.html">
+                                    <img src="img/thumbnail/khamsat2.jpg" class="card-img-top" alt="Card image">
+                                    <time>9:59</time>
+                                    <i class="fas fa-play fa-2x"></i>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">Video title</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block"><i class="far fa-eye"></i><span class="ml-1">65.3k views</span></span>
+                                        <i class="fas fa-clock"></i><span class="ml-1">5 years ago</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channelImg">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ml-3" width="30px">
+                                    <span class="card-text ml-1">channel Name</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

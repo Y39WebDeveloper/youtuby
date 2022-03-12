@@ -1,0 +1,28 @@
+.card:hover{
+    transform: translateY(0%);
+}
+.watchPage .watchIcons{
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+.watchIcons i:hover{
+    cursor: pointer;
+}
+#more{
+    display: none;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.card-inner{
+    display: none;
+}
+.PublicComments .card .btn{
+    background-color: #1b7ada;
+    border-color: #1b7ada;
+    color: #fff;
+}
+.PublicComments .card .btn:hover{
+    background-color: #0101ff;
+}

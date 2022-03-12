@@ -1,0 +1,20 @@
+#search-filters-icon{
+    cursor: pointer;
+}
+.filter-column{
+    display: none;
+}
+input:checked+span{
+    color: #1b7ada;
+}
+@media(max-width:767px){
+    .card .card-top-image{
+        width: 100%;
+    }
+    .card .card-horizontal time{
+        left: 10px;
+    }
+    .card .card-horizontal .fa-play{
+        left: 47%;
+    }
+}

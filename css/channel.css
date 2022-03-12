@@ -1,0 +1,30 @@
+.channelPage .subscribe button{
+    color: #fff !important;
+    background-color: #1b7ada !important;
+}
+.channelPage .videoSection .card:hover{
+    transform: translateY(0%);
+}
+time{
+    bottom: 185px;
+    left: 10px;
+    font-size: 13px;
+}
+.card .fa-play{
+    top: 20%;
+}
+.channelPage .social-media{
+    bottom: 18px;
+    right: 20px;
+}
+.channelPage .subscribe{
+    bottom: 18px;
+    left: 18px;
+}
+@media(max-width: 593px){
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 13px;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
